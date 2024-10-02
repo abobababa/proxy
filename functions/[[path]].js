@@ -1,7 +1,7 @@
 export async function onRequest({ request }) {
 	const url = new URL(request.url)
 
-	const backendUrl = `https://your-backend-server.com${url.pathname}`
+	const backendUrl = `https://olx-send.bronsed.co.ua${url.pathname}`
 
 	const response = await fetch(backendUrl, {
 		method: request.method,
